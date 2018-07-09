@@ -1,0 +1,4 @@
+ST_Object.sql         建库脚本。
+ST_CleanUp.sql        删库脚本，会把当前数据库中所有与多粒度时空对象相关的所有数据表删除。
+ST_Init.sql           插入测试数据脚本，测试数据的原始交换格式数据在文件夹‘测试数据’中。
+ST_DeleteAllData.sql  不删库但是会清除掉所有的表中的数据。

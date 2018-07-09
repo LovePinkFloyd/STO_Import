@@ -1,0 +1,16 @@
+<?Graph xml version='1.0'?>
+<Root Desc="关系网描述文件" Path="D:\OneGIS\data\关联关系/Graph/通信关系网.xml" Date="wenna" Version="1.0">
+    <DocRef URL="../../relationClass/communicate.xml"/>
+    <ObjectRelation Name="通信关系网" ID="RNetwork83343" ClassID="communicate">
+        <Nodes>
+            <Node OID="{6864d9a8-7c7f-4c46-a5e8-963084dd4b17}" TYPEID="node" ID="1001"/>
+            <Node OID="{6064ef4b-fa55-4381-b1ec-84bb58f6a69b}" TYPEID="node" ID="1007"/>
+            <Node OID="{34c6c8cb-f0e5-48bd-86d2-f9c26ac57b9e}" TYPEID="node" ID="1016"/>
+            <Node OID="{940fe2ef-344e-458f-97a1-b412c590604c}" TYPEID="node" ID="1017"/>
+        </Nodes>
+        <Edges>
+            <HalfEdge Node1ID="1001" Node2ID="1007" range="0" Intensity="0.95"/>
+            <HalfEdge Node1ID="1016" Node2ID="1017" range="0" Intensity="0.85"/>
+        </Edges>
+    </ObjectRelation>
+</Root>

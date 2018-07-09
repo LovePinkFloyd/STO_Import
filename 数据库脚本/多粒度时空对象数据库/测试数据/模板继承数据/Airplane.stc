@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GB2312" standalone="yes" ?>
+<!--对象描述文件，格式见【对象格式说明.xml】-->
+<Root Desc="对象描述文件" Version="1.0" Author="wuyuguo" Date="2017-10-10" Path="F:/VBF_DATA">
+    <ObjectTemplate ID="PALNE00000">
+        <Attrs>
+            <Attr Name="名称" Type="static" ValueType="string" Value="飞机" />
+            <Attr Name="编号" Type="static" ValueType="string" Value="000" />
+            <Attr Name="所属" Type="static" ValueType="string" Value="XXXX" />
+        </Attrs>
+    </ObjectTemplate>
+</Root>

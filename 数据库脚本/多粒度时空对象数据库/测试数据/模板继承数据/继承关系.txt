@@ -1,0 +1,15 @@
+Airplane(PALNE0000)
+KJ2000(KJ2000000)->PLANE00000
+Plan20180101(Z9500001)->Z9500000->PALNE00000 
+Zhi95(Z9500000)->PALNE00000
+
+
+在导入过程中的先后顺序
+1.ST_Dictionary
+2.ST_Root
+3.ST_Object
+4.ObjectAtttibute
+5.Object_ObjectTemplate
+ObjectAttribute-201807061034-000000001
+
+

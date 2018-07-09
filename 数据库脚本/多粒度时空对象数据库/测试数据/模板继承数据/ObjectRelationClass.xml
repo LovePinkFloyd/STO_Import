@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GB2312" standalone="yes" ?>
+
+<Root Desc="关系模板文件" Version="1.0" Author="wuyuguo" Date="2017-10-10" Path="F:/VBF_DATA">    
+
+	<ObjectRelationClass Name="指挥关系" ID="CommandRelation">		
+		<NodeParameters>
+			<Parameter Name="Type" ValueType="1"/>
+		</NodeParameters>		
+		<EdgeParameters>
+			<Parameter Name="Strength" ValueType="2"/>
+		</EdgeParameters>	
+	</ObjectRelationClass>
+
+	<ObjectRelationClass Name="通信关系" ID="CommunicationRelation">		
+		<NodeParameters>
+			<Parameter Name="Type" ValueType="1"/>
+		</NodeParameters>		
+		<EdgeParameters>
+			<Parameter Name="Channel" ValueType="2"/>
+		</EdgeParameters>	
+	</ObjectRelationClass>
+
+</Root>

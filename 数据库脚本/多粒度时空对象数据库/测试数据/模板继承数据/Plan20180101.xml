@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="GB2312" standalone="yes" ?>
+<!--对象描述文件，格式见【对象格式说明.xml】-->
+<Root Desc="对象描述文件" Version="1.0" Author="wuyuguo" Date="2017-10-10" Path="F:/VBF_DATA">    
+	<DocRef URL="D:/STObject/Zhi95.xml"/>
+	<DocRef URL="D:/STObject/Kj2000.xml"/>
+	<Object TemplateID="Z9500000" ID="Z9500001" Name="直九五001">
+        <Attrs>
+            <Attr Name="编号" Value="001" />
+            <Attr Name="所属" Value="陆航1团"/>
+        </Attrs>
+        <Position Shape="Point">
+            <Point>(120, 24, 1000)</Point>
+        </Position>
+        <Actions>
+            <Action Name="20180101飞行" ObjectID="" Type="Fly" Trigger="ONCETIME">
+				<Path SRSID="空间参考ID" Format="LBH" NeedSmooth="true" InterPointsNum="200" TimeFormat="RELATIVE_S" BeginTime="0.0" LifeTime="36000" URL="路径的统一资源定位符">
+					<Point>(120.0, 24.2, 10000)</Point>
+					<Point>(120.5, 25.2, 5000)</Point>
+					<Point>(121.0, 24.2, 8000)</Point>
+					<Point>(121.5, 25.2, 8000)</Point>
+				</Path>
+			</Action>
+        </Actions>
+	</Object>
+
+    <Object TemplateID="Z9500000" ID="Z9500002" Name="直九五002">
+        <Attrs>
+            <Attr Name="编号" Value="002" />
+            <Attr Name="所属" Value="陆航2团"/>
+        </Attrs>
+        <Position Shape="Point">
+            <Point>(120.1, 24, 1000)</Point>
+        </Position>
+        <Actions>
+            <Action Name="20180101飞行" ObjectID="" Type="Fly" Trigger="ONCETIME">
+				<Path SRSID="空间参考ID" Format="LBH" NeedSmooth="true" InterPointsNum="200" TimeFormat="yyyy-mm-dd:hh-mm-ss.xxx" BeginTime="2012-01-01:00-00-00.000" LifeTime="36000" URL="路径的统一资源定位符">
+					<Point>(120.0, 24.0, 10000)</Point>
+					<Point>(120.5, 25.0, 5000)</Point>
+					<Point>(121.0, 24.0, 8000)</Point>
+					<Point>(121.5, 25.0, 8000)</Point>
+				</Path>
+			</Action>
+        </Actions>
+    </Object>
+
+
+	<Object TemplateID="KJ2000000" ID="KJ2000001" Name="空警2000001">
+        <Attrs>
+            <Attr Name="编号" Value="001" />
+            <Attr Name="所属" Value="空XX军"/>
+        </Attrs>
+        <Position Shape="Point">
+            <Point>(120.1, 23.5, 1000)</Point>
+        </Position>
+        <Actions>
+            <Action Name="20180101飞行" ObjectID="" Type="Fly" Trigger="ONCETIME">
+				<Path SRSID="空间参考ID" Format="LBH" NeedSmooth="true" InterPointsNum="200" TimeFormat="yyyy-mm-dd:hh-mm-ss.xxx" BeginTime="2012-01-01:00-00-00.000" LifeTime="36000" URL="路径的统一资源定位符">
+					<Point>(119.5, 24.1, 10000)</Point>
+					<Point>(120.0, 25.1, 5000)</Point>
+					<Point>(120.5, 24.1, 8000)</Point>
+					<Point>(121.0, 25.1, 8000)</Point>
+				</Path>
+			</Action>
+        </Actions>
+	</Object>
+
+	<Object TemplateID="KJ2000000" ID="KJ2000002" Name="空警2000002">
+        <Attrs>
+            <Attr Name="编号" Value="002" />
+            <Attr Name="所属" Value="空XX军"/>
+        </Attrs>
+        <Position Shape="Point">
+            <Point>(120.6, 24.6, 1000)</Point>
+        </Position>
+	</Object>
+
+
+	<DocRef URL="D:/STObject/ObjectRelationClass.xml"/>
+
+	<ObjectRelation Name="指挥关系1" ID="CommandRelation1" ClassID="CommandRelation">
+		<Nodes>
+			<Node ID="Z9500001"		Type="1"/>
+			<Node ID="Z9500002"		Type="1"/>
+			<Node ID="KJ2000001"	Type="10"/>
+		</Nodes>
+		
+		<Edges>
+			<MultiEdge Node1ID="KJ2000001">
+				<HalfEdge Node2ID="Z9500001" Strength="10" />
+				<HalfEdge Node2ID="Z9500002" Strength="20" />
+			</MultiEdge>
+		</Edges>
+	</ObjectRelation>
+
+	<ObjectRelation Name="通信关系1" ID="CommunicationRelation1" ClassID="CommunicationRelation">
+		<Nodes>
+			<Node ID="KJ2000001"	Type="10"/>
+			<Node ID="KJ2000002"	Type="10"/>
+		</Nodes>
+		
+		<Edges>
+			<Edge Node1ID="KJ2000001" Node2ID="KJ2000002" Channel="2" />
+		</Edges>
+	</ObjectRelation>
+
+
+
+</Root>

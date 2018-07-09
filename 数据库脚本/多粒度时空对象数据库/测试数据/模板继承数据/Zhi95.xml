@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="GB2312" standalone="yes" ?>
+<!--对象描述文件，格式见【对象格式说明.xml】-->
+<Root Desc="对象描述文件" Version="1.0" Author="wuyuguo" Date="2017-10-10" Path="F:/VBF_DATA">
+	<DocRef URL="D:/STObject/Airplane.xml"/>
+    
+	<ObjectTemplate TemplateID="PALNE00000" ID="Z9500000" Name="直九五" Type="70000001" SRSID="epsg:4610" TRSID="UTC" TimeFormat="yyyy-mm-dd:hh-mm-ss.xxx" BeginTime="2017-10-10:10-00-00.000" EndTime="2017-10-10:00-12-00.000">
+        <Parameters>
+            <Parameter Name="测试参数" ValueType="1" Value="UnKnown" />
+        </Parameters>
+        <Attrs>
+            <Attr Name="最大飞行高度" Type="static" ValueType="2" Value="8000" />
+        </Attrs>
+        <Position Type="static" Shape="Point" Format="LBH" SRSID="epsg:4610" TRSID="UTC" TimeFormat="yyyy-mm-dd:hh-mm-ss.xxx">
+			<Point>(120.0, 24.0, 1000)</Point>
+		</Position>
+        <Forms>
+            <Form Name="Default" Time="2017-10-10" State="Normal" Scale="10000" LocationDependence="false">
+                <Part Name="机身" Type="3DModel" DataFormat="VMESH" URL="Model/Zhi9Wu/JiTi.VMESH" />
+                <Part Name="QianLuoXuanJiang" Type="3DModel" DataFormat="VMESH" URL="Model/Zhi9Wu/DaLuoXuanJiang.VMESH" Translation="(-2.225, 0.0, 1.15)" />
+                <Part Name="HouLuoXuanJiang" Type="3DModel" DataFormat="VMESH" URL="Model/Zhi9Wu/XiaoLuoXuanJiang.VMESH" Translation="(5.58, -0.023, -0.603)" />
+            </Form>
+            <Form Name="2D" Time="2017-10-10" State="Normal" Scale="10000" LocationDependence="false">
+                <Part Name="All" Type="Icon" DataFormat="PNG" URL="Model/Zhi9Wu/JiTi.VMESH" />
+            </Form>
+        </Forms>
+        <Parts>
+            <Part Name="机身" ID="ID" RefObjectID="RefObjectID" />
+            <Part Name="前螺旋桨" ID="ID" RefObjectID="RefObjectID" Translation="(-2.225, 0.0, 1.15)" />
+            <Part Name="后螺旋桨" ID="ID" RefObjectID="RefObjectID" Translation="(5.58, -0.023, -0.603)" />
+        </Parts>
+        <Actions>
+            <Action Name="前螺旋桨转动" ObjectID="QianLuoXuanJiang" Type="RotateAxis" Trigger="COMMAND">
+                <Parameters>
+                    <Parameter Name="Direction" ValueType="1" Value="CCW" />
+					<Parameter Name="Axis" ValueType="1" Value="(0, 0, -1)" />
+                    <Parameter Name="Speed" ValueType="3" Value="720" />
+                </Parameters>
+            </Action>
+            <Action Name="后螺旋桨转动" ObjectID="HouLuoXuanJiang" Type="RotateAxis" Trigger="COMMAND">
+                <Parameters>
+                    <Parameter Name="Direction" ValueType="1" Value="CCW" />
+					<Parameter Name="Axis" ValueType="1" Value="(0, 1, 0)" />
+                    <Parameter Name="Speed" ValueType="3" Value="540" />
+                </Parameters>
+            </Action>
+        </Actions>
+    </ObjectTemplate>
+
+</Root>

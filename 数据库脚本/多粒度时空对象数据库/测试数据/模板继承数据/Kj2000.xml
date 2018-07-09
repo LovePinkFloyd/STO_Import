@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GB2312" standalone="yes" ?>
+<!--对象描述文件，格式见【对象格式说明.xml】-->
+<Root Desc="对象描述文件" Version="1.0" Author="wuyuguo" Date="2017-10-10" Path="F:/VBF_DATA">
+	<DocRef URL="D:/STObject/Airplane.xml"/>
+    <ObjectTemplate TemplateID="PALNE00000" ID="KJ2000000" Name="空警2000" Type="70000001" SRSID="epsg:4610" TRSID="UTC" TimeFormat="yyyy-mm-dd:hh-mm-ss.xxx" BeginTime="2017-10-10:10-00-00.000" EndTime="2017-10-10:00-12-00.000">
+        <Attrs>
+			<Attr Name="名称" Value="空警2000预警机" />
+            <Attr Name="最大飞行高度" Type="static" ValueType="2" Value="10000" />
+        </Attrs>
+        <Position Type="static" Shape="Point" Format="LBH" SRSID="epsg:4610" />
+        <Forms>
+            <Form Name="Default" Time="2017-10-10" State="Normal" Scale="10000" LocationDependence="false">
+                <Part Name="机身" Type="3DModel" DataFormat="VMESH" URL="Model/KJ-2000/yj2000.VMESH" />
+            </Form>
+        </Forms>        
+    </ObjectTemplate>
+</Root>

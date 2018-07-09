@@ -1,0 +1,8 @@
+<ObjectRelationClass Name="通信关系" ID="communicate">
+    <NodeParameters/>
+    <EdgeParameters>
+        <Parameter DefultValue="50" ValueType="Double" Name="range" Alias="通信距离" ValueUnit="km"/>
+        <Parameter DefultValue="0" ValueType="Double" Name="Intensity" Alias="强度" ValueUnit=""/>
+    </EdgeParameters>
+    <RingParameters/>
+</ObjectRelationClass>
