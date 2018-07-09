@@ -1,1 +1,20 @@
-﻿  STO_Import.vcxproj -> D:\work\STO_Import\STO_Import\x64\Debug\STO_Import.exe
+﻿  STOImport.cpp
+  tinyxml2.cpp
+  正在生成代码...
+  LINK : 没有找到 D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\STO_Import.exe 或上一个增量链接没有生成它；正在执行完全链接
+libpqxx_staticD.lib(connection.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(connection.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(connection_base.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(connection_base.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(dbtransaction.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(dbtransaction.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(errorhandler.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(errorhandler.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(except.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(except.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(field.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(field.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(prepared_statement.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(prepared_statement.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(result.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(result.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(row.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(row.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(statement_parameters.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(statement_parameters.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(strconv.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(strconv.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(transaction.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(transaction.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(transaction_base.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(transaction_base.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(util.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(util.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+libpqxx_staticD.lib(version.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“libpqxx_staticD.lib(version.obj)”或在“D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  STO_Import.vcxproj -> D:\work\全空间项目相关\多粒度时空对象入库工具研发\STO_Import\STO_Import\x64\Debug\STO_Import.exe
